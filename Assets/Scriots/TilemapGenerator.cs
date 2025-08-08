@@ -12,14 +12,38 @@ public class TilemapGenerator : MonoBehaviour
 
     void Start()
     {
+        //    int[,] map = GameManager.Instance.map;
+
+        //    for(int x = 0; x < map.GetLength(0); x++)
+        //    {
+        //        for (int y = 0; y < map.GetLength(1); y++)
+        //        {
+        //            Vector3Int floorTilePos = new Vector3Int(x, 0, y);
+        //            if (map[x,y] == 1)
+        //            {
+        //                Instantiate(floorTile, floorTilePos, floorTile.transform.rotation, Map);
+        //                Instantiate(wallTile, floorTilePos + new Vector3(0, 1, 0), floorTile.transform.rotation, Map);
+        //            }
+        //            else
+        //            {
+        //                Instantiate(floorTile, floorTilePos, floorTile.transform.rotation, Map);
+        //            }
+        //        }
+        //    }
+
+    }
+
+
+public void SetTileMap()
+    {
         int[,] map = GameManager.Instance.map;
 
-        for(int x = 0; x < map.GetLength(0); x++)
+        for (int x = 0; x < map.GetLength(0); x++)
         {
             for (int y = 0; y < map.GetLength(1); y++)
             {
                 Vector3Int floorTilePos = new Vector3Int(x, 0, y);
-                if (map[x,y] == 1)
+                if (map[x, y] == 1)
                 {
                     Instantiate(floorTile, floorTilePos, floorTile.transform.rotation, Map);
                     Instantiate(wallTile, floorTilePos + new Vector3(0, 1, 0), floorTile.transform.rotation, Map);
@@ -30,7 +54,6 @@ public class TilemapGenerator : MonoBehaviour
                 }
             }
         }
-        
-    }
 
+    }
 }

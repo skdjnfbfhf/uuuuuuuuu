@@ -299,8 +299,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234970946}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0.000000031664968, z: 0.000000032356184, w: 0.7071067}
-  m_LocalPosition: {x: 2.770548, y: 9.045454, z: 2.2113245}
+  m_LocalRotation: {x: -0.70456374, y: -0.0027669112, z: 0.0027421764, w: -0.70963013}
+  m_LocalPosition: {x: 4.387012, y: 54.052937, z: 3.9829302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -456,6 +456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1945596803}
+  - component: {fileID: 1945596804}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -478,6 +479,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945596804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945596802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fea17d7d6ab674b8978a00a97dd018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 10
+  depth: 10
+  scale: 6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

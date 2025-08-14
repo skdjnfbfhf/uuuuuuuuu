@@ -43,6 +43,24 @@ namespace babu
             height = map.GetLength(1);
 
             tilemapGenerator.SetTileMap();
+
+            //here  8/14
+            occupied = new bool[width, height]; 
+            for(int x = 0; x < width; x++)
+            {
+                for (int y = 0; y < height; y++)
+                {
+                    if (map[x, y] == 0) 
+                    {
+                        occupied[x, y] = false;
+                    }
+                    else
+                    {
+                        occupied[x, y] = true;
+                    }
+                }
+            }
+
         }
 
         void Start()

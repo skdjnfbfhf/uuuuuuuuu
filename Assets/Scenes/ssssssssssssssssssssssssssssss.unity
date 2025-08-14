@@ -274,7 +274,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Map: {fileID: 1945596803}
   floorTile: {fileID: 7435835870083585610, guid: 960bc8a6ae22e4b4aaf3399f6071c2bf, type: 3}
-  wallTile: {fileID: 1480003023901928129, guid: 2f236c0da9bfba54e944f599ab3099ff, type: 3}
+  wallTile: {fileID: 7435835870083585610, guid: 353621d2847172e4080b91e87e1aeab5, type: 3}
 --- !u!4 &1695740640
 Transform:
   m_ObjectHideFlags: 0
